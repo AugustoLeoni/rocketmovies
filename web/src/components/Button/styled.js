@@ -12,10 +12,13 @@ export const Container = styled.button`
   border-radius: 1rem;
   border: none;
 
-  background-color: ${({ theme }) => theme.COLORS.ROSE};
-
+  
   font-size: 1.6rem;
   line-height: 2.1rem;
   font-weight: 500;
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
+
+
+  color: ${({ theme, exclude }) => exclude ? '#FF859B' : theme.COLORS.BACKGROUND_600};
+  background-color: ${({ theme, exclude }) => exclude ? '#0D0C0F' : theme.COLORS.ROSE};
+
 `;
