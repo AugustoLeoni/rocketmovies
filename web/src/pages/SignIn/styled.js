@@ -44,9 +44,17 @@ export const Form = styled.form`
   > button:nth-child(6) {
     margin-top: 1.6rem;
   }
+  
+  > a {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: 500;
 
-  > button:nth-child(7) {
+    color: #FF859B;
+    
     margin-top: 4.2rem;
+
+    text-align: center;
   }
 `;
 

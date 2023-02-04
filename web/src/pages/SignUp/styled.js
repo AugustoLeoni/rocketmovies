@@ -45,8 +45,22 @@ export const Form = styled.form`
     margin-top: 0.8rem;
   }
 
-  > button:nth-child(8) {
+  > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.8rem;
+
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: 500;
+
+    color: #FF859B;
+    
     margin-top: 4.2rem;
+
+    text-align: center;
   }
 `;
 

@@ -1,9 +1,9 @@
 import { Container } from "./styled";
 
 export function ButtonText({ icon: Icon, title }) {
-  return(
+  return (
     <Container>
-      {Icon && <Icon size={20}/>}
+      {Icon && <Icon size={20} />}
       {title}
     </Container>
   )

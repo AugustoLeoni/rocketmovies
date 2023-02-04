@@ -1,44 +1,30 @@
-import { FiStar } from 'react-icons/fi'
+import { FiveStars } from '../FiveStars';
 import { Container, Tags } from "./styled";
+
+import { Link } from 'react-router-dom';
 
 export function MyMovies({ title, description, rating, tags }) {
 
-  const numbers = Object.keys(new Array(5).fill(null))
+  return (
+    <Link to='/movie-preview'>
+      <Container>
+        <h3>{title}</h3>
+        <FiveStars rating={rating} />
 
-  return(
-    <Container>
-      <h3>{title}</h3>
-      <div>
-        <FiStar size={20} 
-          className={(rating >= 1) ? 'full-star' : '' }
-        /> 
-        <FiStar size={20} 
-          className={(rating >= 2) ? 'full-star' : '' }
-        /> 
-        <FiStar size={20} 
-          className={(rating >= 3) ? 'full-star' : '' }
-        /> 
-        <FiStar size={20} 
-          className={(rating >= 4) ? 'full-star' : '' }
-        /> 
-        <FiStar size={20} 
-          className={(rating >= 5) ? 'full-star' : '' }
-        /> 
-      </div>
+        <p>
+          {description ? description : "..."}
+        </p>
 
-      <p>
-        {description ? description : "..."}
-      </p>
-
-      {
-        tags.map(tag => (
-        <Tags
-          key={tag}
-        >
-          {tag}
-        </Tags>
-        ))
-      }
-    </Container>
+        {
+          tags.map(tag => (
+            <Tags
+              key={tag}
+            >
+              {tag}
+            </Tags>
+          ))
+        }
+      </Container>
+    </Link>
   )
 }

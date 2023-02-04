@@ -4,8 +4,10 @@ import { Button } from "../../components/Button";
 import { MyMovies } from '../../components/MyMovies';
 import { Container, Movies } from "./styled";
 
+import { Link } from 'react-router-dom';
+
 export function Home() {
-  const data=[
+  const data = [
     {
       title: "Interestellar",
       rating: 4,
@@ -43,46 +45,46 @@ export function Home() {
     },
   ]
 
-
-  return(
+  return (
     <Container>
       <Header />
 
       <div>
-      <h2>Meus filmes</h2>
-
-      <Button title="Adicionar filme" icon={FiPlus}/>
+        <h2>Meus filmes</h2>
+        <Link to='/create-movie'>
+          <Button title="Adicionar filme" icon={FiPlus} />
+        </Link>
       </div>
-    
+
       <Movies className='list'>
-        <MyMovies 
-          title={data[0].title} 
-          rating={data[0].rating} 
-          description={data[0].description} 
+        <MyMovies
+          title={data[0].title}
+          rating={data[0].rating}
+          description={data[0].description}
           tags={data[0].tags}
         />
 
-        <MyMovies 
-          title={data[1].title} 
-          rating={data[1].rating} 
-          description={data[1].description} 
+        <MyMovies
+          title={data[1].title}
+          rating={data[1].rating}
+          description={data[1].description}
           tags={data[1].tags}
         />
 
-        <MyMovies 
-          title={data[2].title} 
-          rating={data[2].rating} 
-          description={data[2].description} 
+        <MyMovies
+          title={data[2].title}
+          rating={data[2].rating}
+          description={data[2].description}
           tags={data[2].tags}
         />
 
-        <MyMovies 
-          title={data[3].title} 
-          rating={data[3].rating} 
-          description={data[3].description} 
+        <MyMovies
+          title={data[3].title}
+          rating={data[3].rating}
+          description={data[3].description}
           tags={data[3].tags}
         />
-        
+
       </Movies>
     </Container>
   )

@@ -1,12 +1,14 @@
 import { Container } from "./styled";
 import { Input } from '../Input'
 
+import { Link } from "react-router-dom";
+
 export function Header() {
-  return(
+  return (
     <Container>
       <h1>RocketMovies</h1>
 
-      <Input placeholder="Pesquisar pelo título"/>
+      <Input placeholder="Pesquisar pelo título" />
 
       <div>
         <div>
@@ -14,7 +16,9 @@ export function Header() {
           <p>sair</p>
         </div>
 
-        <img src="http://github.com/AugustoLeoni.png" alt="" />
+        <Link to='perfil'>
+          <img src="http://github.com/AugustoLeoni.png" alt="" />
+        </Link>
       </div>
     </Container>
   )

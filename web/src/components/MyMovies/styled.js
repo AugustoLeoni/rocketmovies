@@ -14,21 +14,8 @@ export const Container = styled.div`
       font-weight: 700;
       font-size: 2.4rem;
       line-height: 3.2rem;
-    }
 
-    > div {
-      
-      svg {
-        width: 1.2rem;
-        color: ${({ theme }) => theme.COLORS.ROSE};
-        margin-right: 0.6rem;
-
-        margin-top: 0.8rem;
-      }
-
-      .full-star {
-      fill: ${({ theme }) => theme.COLORS.ROSE};
-      }
+      color: #F4EDE8;
     }
 
     > p {

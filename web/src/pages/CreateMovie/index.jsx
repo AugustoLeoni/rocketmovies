@@ -7,12 +7,16 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { MarkerTag } from '../../components/MarkerTag';
 
+import { Link } from 'react-router-dom';
+
 export function CreateMovie() {
   return (
     <Container>
       <Header />
       <Form className='fromScrollBar'>
-        <ButtonText title="Voltar" icon={FiArrowLeft} />
+        <Link to='/'>
+          <ButtonText title="Voltar" icon={FiArrowLeft} />
+        </Link>
 
         <h1>
           Novo Filme

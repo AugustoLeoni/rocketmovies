@@ -5,11 +5,15 @@ import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 import { ButtonText } from '../../components/ButtonText'
 
+import { Link } from 'react-router-dom';
+
 export function Perfil() {
   return (
     <Container>
       <header>
-        <ButtonText title='Voltar' icon={FiArrowLeft} />
+        <Link to='/'>
+          <ButtonText title='Voltar' icon={FiArrowLeft} />
+        </Link>
       </header>
 
       <div>
