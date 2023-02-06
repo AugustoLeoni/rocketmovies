@@ -50,7 +50,7 @@ export const Form = styled.form`
     line-height: 2.1rem;
     font-weight: 500;
 
-    color: #FF859B;
+    color: ${({ theme }) => theme.COLORS.ROSE};
     
     margin-top: 4.2rem;
 

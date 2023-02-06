@@ -7,8 +7,6 @@ import { FiveStars } from '../../components/FiveStars'
 
 import { Container, Section, Tags } from "./styled";
 
-import { Link } from 'react-router-dom'
-
 export function MoviePreview() {
 
   const tags = ['Ficção Cientifica', 'Drama', 'Familia']
@@ -18,9 +16,9 @@ export function MoviePreview() {
       <Header />
 
       <Section className='list'>
-        <Link to='/'>
-          <ButtonText title='Voltar' icon={FiArrowLeft} />
-        </Link>
+
+        <ButtonText title='Voltar' icon={FiArrowLeft} />
+
 
         <div>
           <h1>Interestellar</h1>

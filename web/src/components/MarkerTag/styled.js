@@ -6,8 +6,8 @@ export const Container = styled.div`
   font-size: 1.6rem;
   line-height: 1.9rem;
 
-  color: #FFFFFF;
-  background-color: ${({ isActive }) => isActive ? 'transparent' : '#262529'};
+  color: ${({ theme }) => theme.COLORS.WHITE_000};
+  background-color: ${({ theme, isActive }) => isActive ? 'transparent' : theme.COLORS.BACKGROUND_700};
 
   border-radius: 1rem;
 
@@ -19,7 +19,7 @@ export const Container = styled.div`
 
   gap: 1.6rem;
 
-  border: ${({ isActive }) => isActive ? '2px dashed #948F99' : 'none'};
+  border: ${({ theme, isActive }) => isActive ? '2px dashed #948F99' : 'none'};
 `;
 
 export const IconButton = styled.button`

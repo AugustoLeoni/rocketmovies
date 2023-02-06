@@ -14,9 +14,7 @@ export function CreateMovie() {
     <Container>
       <Header />
       <Form className='fromScrollBar'>
-        <Link to='/'>
-          <ButtonText title="Voltar" icon={FiArrowLeft} />
-        </Link>
+        <ButtonText title="Voltar" icon={FiArrowLeft} />
 
         <h1>
           Novo Filme

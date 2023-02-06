@@ -32,7 +32,7 @@ export const Form = styled.form`
     font-size: 3.6rem;
     line-height: 4.7rem;
 
-    color: #F4EDE8;
+    color: ${({ theme }) => theme.COLORS.WHITE};
 
     margin: 2.4rem 0 4rem;
   }
@@ -48,7 +48,7 @@ export const Form = styled.form`
     font-size: 2.0rem;
     line-height: 2.6rem;
 
-    color: #999591;
+    color: ${({ theme }) => theme.COLORS.GRAY_300};
 
     margin: 4rem 0 2.4rem;
   }
@@ -66,7 +66,7 @@ export const Textarea = styled.textarea`
   width: 100%;
   height: 27.4rem;
 
-  background: #262529;
+  background: ${({ theme }) => theme.COLORS.BACKGROUND_700};
   border-radius: 1rem;
 
   border: 0;
@@ -92,7 +92,7 @@ export const Markers = styled.div`
   width: 100%;
   height: 8.8rem;
 
-  background: #0D0C0F;
+  background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   border-radius: 0.8rem;
 
   margin-bottom: 4rem;

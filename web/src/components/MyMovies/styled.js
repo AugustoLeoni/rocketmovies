@@ -15,7 +15,7 @@ export const Container = styled.div`
       font-size: 2.4rem;
       line-height: 3.2rem;
 
-      color: #F4EDE8;
+      color: ${({ theme }) => theme.COLORS.WHITE};
     }
 
     > p {

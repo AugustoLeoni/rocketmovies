@@ -39,7 +39,7 @@ export const Section = styled.section`
       font-size: 3.6rem;
       line-height: 4.7rem;
 
-      color: #F4EDE8;
+      color: ${({ theme }) => theme.COLORS.WHITE};
 
       margin-top: 2.4rem;
       margin-bottom: 2.4rem;
@@ -67,11 +67,11 @@ export const Section = styled.section`
       font-size: 1.6rem;
       line-height: 1.9rem;
 
-      color: #F4EDE8;
+      color: ${({ theme }) => theme.COLORS.WHITE};
     }
 
     svg {
-      fill: #FF859B
+      fill: ${({ theme }) => theme.COLORS.ROSE}
     }
   }
 
@@ -94,7 +94,7 @@ export const Section = styled.section`
       
       text-align: justify;
       
-      color: #F4EDE8;
+      color: ${({ theme }) => theme.COLORS.WHITE};
     }
   }
 `;
@@ -106,7 +106,7 @@ export const Tags = styled.div`
 
   color: ${({ theme }) => theme.COLORS.WHITE_100};
 
-  background: #282124;
+  background: ${({ theme }) => theme.COLORS.BROWN};
   border-radius: 0.8rem;
 
   padding: 0.8rem 1.6rem;

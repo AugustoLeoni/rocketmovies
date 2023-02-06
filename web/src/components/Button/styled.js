@@ -18,7 +18,7 @@ export const Container = styled.button`
   font-weight: 500;
 
 
-  color: ${({ theme, exclude }) => exclude ? '#FF859B' : theme.COLORS.BACKGROUND_600};
-  background-color: ${({ theme, exclude }) => exclude ? '#0D0C0F' : theme.COLORS.ROSE};
+  color: ${({ theme, exclude }) => exclude ? theme.COLORS.ROSE : theme.COLORS.BACKGROUND_600};
+  background-color: ${({ theme, exclude }) => exclude ? theme.COLORS.BACKGROUND_900 : theme.COLORS.ROSE};
 
 `;
